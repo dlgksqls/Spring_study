@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.restapi.RestApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-17T05:26:06" hostname="ihanbin-ui-noteubug.local" time="0.381">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.restapi.RestApiApplicationTests" time="0.381"/>
+  <system-out><![CDATA[14:26:06.366 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.restapi.RestApiApplicationTests]: RestApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:26:06.400 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.restapi.RestApiApplication for test class com.example.restapi.RestApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-04-17T14:26:06.517+09:00  INFO 17879 --- [rest-api] [    Test worker] c.e.restapi.RestApiApplicationTests      : Starting RestApiApplicationTests using Java 17.0.10 with PID 17879 (started by leehb in /Users/leehb/Desktop/Spring_boot_study/rest-api)
+2024-04-17T14:26:06.518+09:00  INFO 17879 --- [rest-api] [    Test worker] c.e.restapi.RestApiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-04-17T14:26:06.893+09:00  INFO 17879 --- [rest-api] [    Test worker] c.e.restapi.RestApiApplicationTests      : Started RestApiApplicationTests in 0.451 seconds (process running for 0.84)
+{"user_name":"홍길동","user_age":10,"email":"hong@gmail.com","is_korean":true}
+UserRequest(userName=홍길동, userAge=10, email=hong@gmail.com, isKorean=true)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
