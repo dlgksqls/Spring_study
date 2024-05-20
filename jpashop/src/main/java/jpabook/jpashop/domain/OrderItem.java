@@ -22,5 +22,32 @@ public class OrderItem {
     private Order order;
 
     private int orderPrice;
-    private int count;
+    private int count; // 주문 수량
+
+    protected OrderItem() { // 이거 쓰지 말고 ex) orderItem.set~~
+    }
+
+    // == 생성 메서드 == // 이렇게 써라
+    public static OrderItem createOrderItem(Item item, int orderPrice, int count){
+        OrderItem orderItem = new OrderItem();
+        orderItem.setItem(item);
+        orderItem.setOrderPrice(orderPrice);
+        orderItem.setCount(count);
+
+        item.removeStock(count);
+
+        return orderItem;
+    }
+
+    // == 비즈니스 로직 == //
+    public void cancel() { // 재고 수량을 되돌려준다.
+        getItem().addStock(count);
+    }
+
+    /**
+     * 주문 상품 전체 가격 조회
+     */
+    public int getTotalPrice() {
+        return getOrderPrice() * getCount();
+    }
 }
