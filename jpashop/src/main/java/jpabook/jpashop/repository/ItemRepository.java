@@ -18,7 +18,9 @@ public class ItemRepository {
             em.persist(item);
         }
         else{
-            em.merge(item);
+            // 수정 변경 감지를
+            // merge 가 영속성 context로 바뀜 item은 준영속성
+            Item merge = em.merge(item);
         }
     }
 
