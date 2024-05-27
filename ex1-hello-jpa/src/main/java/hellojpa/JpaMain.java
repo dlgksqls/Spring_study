@@ -15,10 +15,10 @@ public class JpaMain {
         tx.begin(); // 트랜잭션 시작
 
         try {
-            Member member = new Member();
-            member.setId(3L);
-            member.setName("HelloC");
-            em.persist(member); // 저장
+            Member findMember = em.find(Member.class, 1L);
+
+            findMember.setName("changeHelloA");
+
             tx.commit();
         } catch (Exception e){
             tx.rollback();
