@@ -15,7 +15,8 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments"  value="true"/>
-<!--            <property name="hibernate.hbm2ddl.auto" value="create" />-->
+            <property name="hibernate.hbm2ddl.auto" value="none"/> <!--테이블을 새로고침하기 용이, drop 후 새로 생성
+ value 값을 원하는 방향으로 바꿔주기-->
         </properties>
     </persistence-unit>
 
