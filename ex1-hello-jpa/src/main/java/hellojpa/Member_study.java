@@ -4,13 +4,11 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Date;
 
-@Entity
+//@Entity
 @Getter @Setter
-public class Member {
+public class Member_study {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     // id를 내가 넣으면 안됨.. db가 알아서 함, 문제점 : PK값을 db에 들어가봐야 알 수 있음 그래서 persist를 호출한 후 바로 commit됨
@@ -33,6 +31,6 @@ public class Member {
 
     @Lob // varchar 을 넘어가는 큰 데이터
     private String description;
-    public Member() {
+    public Member_study() {
     }
 }

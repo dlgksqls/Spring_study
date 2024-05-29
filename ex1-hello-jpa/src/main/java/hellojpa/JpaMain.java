@@ -41,7 +41,7 @@ public class JpaMain {
 //            em.persist(member1);
 //            em.persist(member2);
 
-            Member member = em.find(Member.class, 150L);
+            Member_study member = em.find(Member_study.class, 150L);
             //member.setName("ZZZZZ"); // 이걸로 변경해라 (이 시점에 데이터가 변경됨)
 
             // em.persist(member); // 변경할땐 이걸 호출하지마라
