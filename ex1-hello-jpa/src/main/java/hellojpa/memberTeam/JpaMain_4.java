@@ -1,11 +1,9 @@
 package hellojpa.memberTeam;
 
-import hellojpa.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.hibernate.engine.spi.SessionFactoryDelegatingImpl;
 
 import java.util.List;
 
@@ -33,25 +31,22 @@ public class JpaMain_4 {
             Member_team member = new Member_team();
             member.setName("member1");
 //            member.setTeamId(team.getId());
-            member.setTeam(team_a);
+            member.changeTeam(team_b); // ******
             em.persist(member);
 
-            em.flush();
-            em.clear();
-
-            // 연관관계가 없으면 em에게 계속 물어봐야함
-            Member_team findMember = em.find(Member_team.class, member.getId());
+            //team_b.addMember(member); changeTeam 을 쓰거나 addMember 이렇게 쓰거나...
 
 //            Team findTeamId = findMember.getTeam();
 //            System.out.println("findTeam = " + findTeamId.getName());
 
+
             Team findTeam = em.find(Team.class, 2L);
-            findMember.setTeam(findTeam);
-            findMember.getTeam();
+            //findTeam.getMembers().add(member); // 양쪽에 객체 값 세팅 // ******
 
-            System.out.println("change Team = " + findMember.getTeam().getName());
+            em.flush();
+            em.clear();
 
-            List<Member_team> members = findMember.getTeam().getMembers();
+            List<Member_team> members = findTeam.getMembers();
             for (Member_team m : members){
                 System.out.println("m = " + m.getName());
             }

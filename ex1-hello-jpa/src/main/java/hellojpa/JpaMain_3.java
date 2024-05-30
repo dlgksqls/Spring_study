@@ -1,11 +1,9 @@
 package hellojpa;
 
-import hellojpa.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.hibernate.query.Order;
 
 public class JpaMain_3 {
     public static void main(String[] args) {

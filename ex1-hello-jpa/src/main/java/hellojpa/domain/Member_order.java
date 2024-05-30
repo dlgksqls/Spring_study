@@ -4,9 +4,12 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-//@Entity
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
 @Getter @Setter
-public class Member {
+public class Member_order {
 
     @Id @GeneratedValue // 생략 하면 auto 가 default
     @Column(name = "MEMBER_ID")
@@ -16,4 +19,7 @@ public class Member {
     private String name;
     private String street;
     private String zipcode;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 }

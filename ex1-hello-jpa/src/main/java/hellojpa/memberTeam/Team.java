@@ -7,6 +7,8 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+// 롬복에서 왼만하면 toString 하지마라
+// 컨트롤러에서 엔티티를 절대 뽑지마라
 @Entity
 @Getter @Setter
 public class Team {
@@ -20,4 +22,8 @@ public class Team {
     @OneToMany(mappedBy = "team") // member의 team으로 mapping이 되어 있다. 읽기만 가능... (조회) 여기에는 값 넣는거 아님
     private List<Member_team> members = new ArrayList<>();
 
+//    public void addMember(Member_team member) {
+//        member.setTeam(this);
+//        this.members.add(member);
+//    }
 }

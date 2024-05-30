@@ -5,8 +5,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-//@Entity
+@Entity
 @Table(name = "ORDERS")
 @Getter @Setter
 public class Order {
@@ -15,10 +17,15 @@ public class Order {
     @Column(name = "ORDER_ID")
     private Long id;
 
-    @Column(name = "MEMBER_ID")
-    private Long memberId;
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID")
+    private Member_order member;
+
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING) // 꼭 String 으로
     private OrderStatus status;
+
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> orderItems = new ArrayList<>();
 }
