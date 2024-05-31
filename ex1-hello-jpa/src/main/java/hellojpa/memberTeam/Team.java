@@ -20,6 +20,7 @@ public class Team {
     private String name;
 
     @OneToMany(mappedBy = "team") // member의 team으로 mapping이 되어 있다. 읽기만 가능... (조회) 여기에는 값 넣는거 아님
+    //@JoinColumn(name = "TEAM_ID") 1 : 다 연관관계 일때 하지만 잘 안씀
     private List<Member_team> members = new ArrayList<>();
 
 //    public void addMember(Member_team member) {

@@ -1,4 +1,4 @@
-package hellojpa.domain;
+package hellojpa.memberTeam;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,16 +9,14 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
-public class Item {
+public class Product {
 
     @Id @GeneratedValue
-    @Column(name = "ITEM_ID")
+    @Column(name = "PRODUCT_ID")
     private Long id;
 
     private String name;
-    private int price;
-    private int stockQuantity;
 
-    @ManyToMany(mappedBy = "items")
-    private List<Category> categories = new ArrayList<>();
+    @OneToMany(mappedBy = "product")
+    private List<MemberProduct> products = new ArrayList<>();
 }
