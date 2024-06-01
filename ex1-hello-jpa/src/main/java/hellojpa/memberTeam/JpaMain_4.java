@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class JpaMain_4 {
@@ -32,6 +33,8 @@ public class JpaMain_4 {
             member.setName("member1");
 //            member.setTeamId(team.getId());
             member.changeTeam(team_b); // ******
+            member.setCreatedBy("Kim");
+            member.setCreatedDate(LocalDateTime.now());
             em.persist(member);
 
             //team_b.addMember(member); changeTeam 을 쓰거나 addMember 이렇게 쓰거나...
