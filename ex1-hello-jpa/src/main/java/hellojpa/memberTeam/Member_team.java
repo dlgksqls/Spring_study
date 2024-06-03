@@ -25,7 +25,21 @@ public class Member_team extends BaseEntity{
 //    private Long teamId;
 
     // 1 대 다 연관관계일때는 안 씀 이것들
-    @ManyToOne() // 다 쪽이 member
+    /**
+     *  @ManyToOne(fetch = FetchType.EAGER)
+     *  이것은 멤버와 team을 같이 사용할때...
+     *  쿼리 하나 날릴때 전부 다 값을 가져옴
+     *  em.find 할때 조인해서 다 가져온다는 뜻
+     */
+    /**
+     *   다 쪽이 member
+     *   lazy로 하면, team을 프록시 객체로 가져옴, 멤버만 조회하도록
+     *   프록시를 가져와서 무언가를 터치하 때 초기화 (쿼리 날림)
+     *   이건 쿼리 두번 나감
+     *   실무에서는 즉시 로딩을 사용 안함 (가급적 지연 로딩만 사용)
+     *   실무에서는 그냥 지연 로딩으로 다 발라라
+      */
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TEAM_ID")
     private Team team;
 
