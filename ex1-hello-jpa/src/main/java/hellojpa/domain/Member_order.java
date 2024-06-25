@@ -3,6 +3,7 @@ package hellojpa.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.Value;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -18,6 +19,9 @@ public class Member_order {
 
     private String userName;
 
+    /**
+     * Embedded를 사용하면 더 객체지향적으로 설계 가능
+     */
     // 주소
 //    @Column(length = 10) // 길이가 10 넘으면 안됨
 //    private String name;
@@ -25,6 +29,14 @@ public class Member_order {
 //    private String zipcode;
     @Embedded
     private Address homeAddress;
+
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "city", column = @Column(name = "WORK_CITY")),
+            @AttributeOverride(name = "street", column = @Column(name = "WORK_STREET")),
+            @AttributeOverride(name = "zipcode", column = @Column(name = "WORK_ZIPCODE"))
+    })
+    private Address workAddress;
 
     // 기간 Period
 //    LocalDateTime startDate;

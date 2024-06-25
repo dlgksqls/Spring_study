@@ -21,13 +21,22 @@ public class JpaMain_6 {
             Book book = new Book();
             book.setName("JPA");
             book.setAuthor("김영한");
+            Address address = new Address("daegu", "street", "zipcode");
 
-            Member_order memberOrder = new Member_order();
-            memberOrder.setUserName("Hello!");
-            memberOrder.setHomeAddress(new Address("daegu", "street", "zipcode"));
-            memberOrder.setWorkPeriod(new Period());
+            Member_order member1 = new Member_order();
+            member1.setUserName("Hello!");
+            member1.setHomeAddress(address);
+            member1.setWorkPeriod(new Period());
 
-            em.persist(memberOrder);
+            Member_order member2 = new Member_order();
+            member2.setUserName("Hello!!");
+            member2.setHomeAddress(address);
+            member2.setWorkPeriod(new Period());
+
+            // member1.getHomeAddress().setCity("");
+
+            em.persist(member1);
+            em.persist(member2);
             em.persist(book);
 
             tx.commit();
