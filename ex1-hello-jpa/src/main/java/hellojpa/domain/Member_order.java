@@ -7,7 +7,9 @@ import lombok.Value;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter @Setter
@@ -18,6 +20,29 @@ public class Member_order {
     private Long id;
 
     private String userName;
+
+    /**
+     * 값 타입 컬렉션
+     * 모든 생명주기가 member에 의존함
+     */
+    @ElementCollection
+    @CollectionTable(name = "FAVORITE_FOOD", joinColumns =
+    @JoinColumn(name = "MEMGER_ID")
+    )
+    @Column(name = "FOOD_NAME")
+    private Set<String> favoriteFoods = new HashSet<>();
+
+//    @ElementCollection
+//    @CollectionTable(name = "ADDRESS", joinColumns =
+//    @JoinColumn(name = "MEMBER_ID")
+//    )
+//    private List<Address> addressHistory = new ArrayList<>();
+    /**
+     * 값타입 보다는 엔티티 하나 더 만들어서 이렇게 써라....
+     */
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "MEMBER_ID")
+    private List<AddressEntity> addressHistory = new ArrayList<>();
 
     /**
      * Embedded를 사용하면 더 객체지향적으로 설계 가능

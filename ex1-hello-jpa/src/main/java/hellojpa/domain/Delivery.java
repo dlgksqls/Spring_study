@@ -12,9 +12,12 @@ public class Delivery {
     @Column(name = "DELIVERY_ID")
     private Long id;
 
-    private String city;
-    private String street;
-    private String zipCode;
+//    private String city;
+//    private String street;
+//    private String zipCode;
+
+    @Embedded
+    private Address address;
     private DeliveryStatus status;
 
     @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
