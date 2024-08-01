@@ -16,6 +16,8 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments"  value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.default_batch_fetch_size" value="100"/>
+            <!-- 기본적으로 배치 패치 사이즈를 100으로 줄 수 있음 회사에서는 1000이하?로 한다고 함 보통 -->
             <!--테이블을 새로고침하기 용이, drop 후 새로 생성 value 값을 원하는 방향으로 바꿔주기-->
         </properties>
     </persistence-unit>
