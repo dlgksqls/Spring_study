@@ -61,7 +61,7 @@ public class JpqlMain8 {
             // String query2 = "select m From Member m join fetch m.team as m where m.name";
             // 이런식으로 별칭 주지 마라
             // 처음부터 영속성 컨텍스트에 값을 다 넣어놓음
-            // 패치 조인은 객체를 그대로 사용할 때 사용해야함
+            // 패치 조인은 객체를 그대로 사용할 때 사용해야
 
             List<Member> result2 = em.createQuery(query2, Member.class)
                             .getResultList();
