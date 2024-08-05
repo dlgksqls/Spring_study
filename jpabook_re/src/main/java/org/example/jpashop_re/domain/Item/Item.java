@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.example.jpashop_re.domain.Category;
+import org.example.jpashop_re.exception.NotEnoughStockException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +25,26 @@ public abstract class Item {
 
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
+
+    // == 비즈니스 로직 == //
+    // 이런 식으로 변경해야함 값을.. setter를 사용할게 아니라
+
+    /**
+     * 재고 증가
+     */
+    public void addStock(int quantity){
+        this.stockQuantity += quantity;
+    }
+
+    /**
+     * 재고 감소
+     */
+    public void removeStock(int quantity){
+        int restStock = stockQuantity - quantity;
+        if (restStock < 0){
+            throw new NotEnoughStockException("need more stock");
+        }
+        this.stockQuantity = restStock;
+    }
 
 }
