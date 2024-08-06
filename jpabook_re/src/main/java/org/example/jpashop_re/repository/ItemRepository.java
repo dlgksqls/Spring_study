@@ -17,7 +17,8 @@ public class ItemRepository {
         if (item.getId() == null){ // 아이디값이 없다면 저장
             em.persist(item);
         }
-        else{ // 있다면 업데이트
+        else{ // 있다면 업데이트.. 변경 감지를 사용하면 바꿀 것만 바뀌는데, merge를 사용하면 모든 필드가 파라미터 값으로 다 바뀌므로,,
+            // 파라미터 값이 없다면 null 로 바뀜...
             em.merge(item);
         }
     }
