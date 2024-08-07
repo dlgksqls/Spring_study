@@ -27,7 +27,6 @@ public class Order {
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL) // 이것도
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
-
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING) // 무조건 이걸 쓰셈

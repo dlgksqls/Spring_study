@@ -1,6 +1,8 @@
 package jpabook.jpashop.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,11 +17,14 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
+    @NotEmpty // 어떤 api에서는 NotEmpty가 필요할 수도 있지만,, 어디서는 필요없을 수도,,,
     private String name;
 
+    @JsonIgnore
     @Embedded
     private Address address;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "member") // 연관관계의 주인이 아님, 주인은 order이다
     private List<Order> orders = new ArrayList<>();
 }
