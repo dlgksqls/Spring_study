@@ -20,7 +20,6 @@ public class Member {
     @NotEmpty // 어떤 api에서는 NotEmpty가 필요할 수도 있지만,, 어디서는 필요없을 수도,,,
     private String name;
 
-    @JsonIgnore
     @Embedded
     private Address address;
 
