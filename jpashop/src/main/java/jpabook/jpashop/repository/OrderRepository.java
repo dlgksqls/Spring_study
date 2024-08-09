@@ -5,12 +5,9 @@ import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.*;
 import jpabook.jpashop.domain.Order;
 import lombok.RequiredArgsConstructor;
-import org.apache.catalina.util.StringUtil;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,5 +87,26 @@ public class OrderRepository {
             query = query.setParameter("name", orderSearch.getMemberName());
         }
         return query.getResultList();
+    }
+
+    public List<Order> findAllWithMemberDelivery() { // 이런식으로 엔티티를 조회하는 식으로 사용해야함
+        return em.createQuery(
+                "select o from Order  o" +
+                        " join fetch o.member m" +
+                        " join  fetch o.delivery d", Order.class
+        ).getResultList();
+    }
+
+    /**
+     * 레포지토리는 엔티티를 조회할때 사용해야함,, 하지만 이 방법은 dto를 조회함,,,
+     * 이렇게 dto를 뽑아야 할 때에는 repository 안에 query 패키지로 따로 만들기,,,
+     * ex) repository.order.simpleQuery.OrderSimpleQueryDto
+     */
+    public List<OrderSimpleQueryDto> findOrderDtos() {
+        return em.createQuery(
+                "select o from Order o" +
+                        " join o.member m" +
+                        " join o.delivery d", OrderSimpleQueryDto.class)
+                .getResultList();
     }
 }
