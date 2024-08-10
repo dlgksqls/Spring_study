@@ -12,6 +12,9 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
+        # 페이징 사이즈 디폴트값,, 왠만하면 키는게 좋음,, 의미 : In쿼리의 갯수
+        # 데이터가 1000개라 치면 100개씩 10번 인쿼리가 나감 (100개씩 불러온다는 뜻)
+        default_batch_fetch_size: 100
 
 logging:
   level:

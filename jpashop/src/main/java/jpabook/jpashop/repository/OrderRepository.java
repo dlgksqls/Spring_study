@@ -89,12 +89,22 @@ public class OrderRepository {
         return query.getResultList();
     }
 
-    public List<Order> findAllWithMemberDelivery() { // 이런식으로 엔티티를 조회하는 식으로 사용해야함
+    public List<Order> findAllWithMemberDelivery() { // 이런식으로 엔티티를 조회하는 식으로 사용해야함, xToOne관계는 fetch join
         return em.createQuery(
                 "select o from Order  o" +
                         " join fetch o.member m" +
-                        " join  fetch o.delivery d", Order.class
+                        " join fetch o.delivery d", Order.class
         ).getResultList();
+    }
+
+    public List<Order> findAllWithMemberDelivery(int offset, int limit) { // 이런식으로 엔티티를 조회하는 식으로 사용해야함, xToOne관계는 fetch join
+        return em.createQuery(
+                "select o from Order  o" +
+                        " join fetch o.member m" +
+                        " join fetch o.delivery d" , Order.class)
+                .setFirstResult(offset)
+                .setMaxResults(limit)
+                .getResultList();
     }
 
     /**
@@ -108,5 +118,43 @@ public class OrderRepository {
                         " join o.member m" +
                         " join o.delivery d", OrderSimpleQueryDto.class)
                 .getResultList();
+    }
+
+    /**
+     * 오더 2개, 오더 아이템 4개 일 경우, 그리고 각 오더마다 아이템이 두개 인 경우
+     * order orderItem
+     *   1       1
+     *   1       2
+     *   2       3
+     *   2       4
+     * 이렇게 조회되서 문제임,,,
+     * 결과적으로 오더는 2개인데, 아이템이 4개라서 4개가 조회됨
+     *
+     * fetch join paging 문제 해결
+     * xToOne 관계는 무조건 fetch join 하셈
+     * 컬렉션은 지연로딩으로 조회
+     * hibernate.default_batch_fetch_size: 글로벌 설정
+     * @BatchSize: 개별 최적화
+     */
+    public List<Order> findAllWithItem() {
+        return em.createQuery(
+                "select o from Order o" +
+                " join fetch o.member m" +
+                " join fetch o.delivery d" +
+                " join fetch o.orderItems oi" +
+                " join fetch oi.item i", Order.class)
+                .getResultList();
+
+        // distinct를 사용하면 중복되는 칼럼 제거해줌 하지만 최신 버전은 패치조인에서 distinct를 적지 않아도 자동 제공
+//        return em.createQuery(
+//                "select distinct o from Order o" +
+//                        " join fetch o.member m" +
+//                        " join  fetch o.delivery d" +
+//                        " join  fetch  o.orderItems oi" +
+//                        " join  fetch oi.item i", Order.class)
+//                .setFirstResult(0) // fetch join을 한 상태에서 페이징을 사용하면 메모리에서 페이징하기 때문에 상당히 위험함
+//                .setMaxResults(100)
+//                .getResultList();
+
     }
 }
