@@ -89,6 +89,9 @@ public class OrderRepository {
         return query.getResultList();
     }
 
+
+//    public List<Order> findAll(OrderSearch orderSearch){
+//    }
     public List<Order> findAllWithMemberDelivery() { // 이런식으로 엔티티를 조회하는 식으로 사용해야함, xToOne관계는 fetch join
         return em.createQuery(
                 "select o from Order  o" +

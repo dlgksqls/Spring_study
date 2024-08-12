@@ -1,22 +1,20 @@
 package jpabook.jpashop.service;
 
-import jakarta.persistence.EntityManager;
 import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.repository.MemberRepository;
+import jpabook.jpashop.repository.MemberRepositoryOld;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest // 스프링 컨테이너 안에서 테스트를 돌리겠다.
 @Transactional // 테스트 안에서 rollback 함
 class MemberServiceTest {
 
     @Autowired MemberService memberService;
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepositoryOld memberRepositoryOld;
     @Test
     public void 회원가입() throws Exception{
         // given
@@ -27,7 +25,7 @@ class MemberServiceTest {
         Long saveId = memberService.join(member);
 
         // then
-        Assertions.assertEquals(member, memberRepository.findOne(saveId));
+        Assertions.assertEquals(member, memberRepositoryOld.findOne(saveId));
     }
 
     @Test

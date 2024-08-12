@@ -32,6 +32,7 @@ public class OrderApiController {
 
         // iter + tab => foreach
         // 강제 초기화 코드
+
         for (Order order : all) {
             order.getMember().getName();
             order.getDelivery().getAddress();
