@@ -1,7 +1,11 @@
 package study.datajpa.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import jakarta.persistence.LockModeType;
+import jakarta.persistence.QueryHint;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
+import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;
 import study.datajpa.dto.MemberDto;
 import study.datajpa.entity.Member;
@@ -30,6 +34,45 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     List<Member> findbyNames(@Param("names") List<String> names);
 
     List<Member> findListByUsername(String username); // 컬렉션
+
     Member findMemberByUsername(String username); // 단건
+
     Optional<Member> findOptionalByUsername(String username); // 단건 Optional
+
+    // 반환타입 : page, 반환 타입이 page면 totalcount 쿼리까지 같이 날림
+    @Query(value = "select m from Member m left join m.team t",
+            countQuery = "select count(m) from Member m")
+    Page<Member> findPageByAge(int age, Pageable pageable);
+
+    Slice<Member> findSliceByAge(int age, Pageable pageable); // 카운트 쿼리 안나감
+
+    @Modifying(clearAutomatically = true)
+    // 이게 있어야 executeUpdate를 사용함, clearAutomatically = true는 쿼리가 나간 후 깨끗하게 자동으로 해줌
+    // em.clear를 안해도 됨
+    @Query("update Member m set m.age = m.age + 1 where m.age >= :age")
+    int bulkAgePlus(@Param("age") int age);
+
+    @Query("select m from Member m left join fetch m.team")
+    List<Member> findMemberFetchJoin();
+
+    /**
+     * 아래 세개는 다 같은 것
+     */
+    @Override
+    @EntityGraph(attributePaths = {"team"}) // fetch join
+    List<Member> findAll();
+
+    @EntityGraph(attributePaths = {"team"})
+    @Query("select m from Member m ")
+    List<Member> findMemberEntityGraph();
+
+    @EntityGraph(attributePaths = {"team"})
+    List<Member> findEntityGraphByUsername(@Param("username") String username);
+
+    @QueryHints(value = @QueryHint(name = "org.hibernate.readOnly", value = "true")) // 난 이것을 읽기전용으로 쓸거야
+    // 변경감지 체크 안함
+    Member findReadOnlyByUsername(String username);
+
+    @Lock(LockModeType.PESSIMISTIC_WRITE) // for update
+    Member findLockByUsername(String username);
 }
