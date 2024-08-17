@@ -11,6 +11,16 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
+
+  data:
+    web:
+      pageable:
+        default-page-size: 10 # 글로벌하게 페이지 default 사이즈를 10으로,,
+        # @GetMapping("/members")
+        #    public Page<Member> list(Pageable pageable){
+        #        return memberRepository.findAll(pageable);
+        #    }
+        max-page-size: 2000
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace
