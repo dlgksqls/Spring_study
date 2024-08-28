@@ -13,11 +13,11 @@
     <th>age</th>
     </thead>
     <tbody>
-    <c:forEach var="item" items="${members}">
+    <c:forEach var="memberList" items="${memberList}">
         <tr>
-            <td>${item.id}</td>
-            <td>${item.username}</td>
-            <td>${item.age}</td>
+            <td>${memberList.id}</td>
+            <td>${memberList.username}</td>
+            <td>${memberList.age}</td>
         </tr>
     </c:forEach>
     </tbody>
