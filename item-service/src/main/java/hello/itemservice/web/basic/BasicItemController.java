@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -75,7 +76,7 @@ public class BasicItemController {
 
         return "basic/item";
     }
-    @PostMapping("/add")
+    //@PostMapping("/add")
     public String addItemV4(Item item){
 
         // Item -> item
@@ -88,6 +89,27 @@ public class BasicItemController {
 
         return "basic/item";
     }
+
+    /**
+     * PRG - Post/Redirect/Get
+     */
+    //@PostMapping("/add")
+    public String addItemV5(Item item){
+
+        itemRepository.save(item);
+
+        return "redirect:/basic/items/" + item.getId();
+    }
+    @PostMapping("/add")
+    public String addItemV6(Item item, RedirectAttributes redirectAttributes){
+
+        Item savedItem = itemRepository.save(item);
+        redirectAttributes.addAttribute("itemId", savedItem.getId()); // 밑에 url에 들어감
+        redirectAttributes.addAttribute("status", true); // 들어가지 못한 애들은 쿼리파라미터로 들어감
+        // http://localhost:8080/basic/items/3?status=true
+
+        return "redirect:/basic/items/{itemId}";
+    }
     @GetMapping("/{itemId}/edit")
     public String editForm(@PathVariable Long itemId, Model model){
         Item item = itemRepository.findById(itemId);
@@ -97,7 +119,7 @@ public class BasicItemController {
     @PostMapping("{itemId}/edit")
     public String edit(@PathVariable Long itemId, @ModelAttribute Item item){
         itemRepository.update(itemId, item);
-        return
+        return "redirect:/basic/items/{itemId}";
     }
 
     @PostConstruct
