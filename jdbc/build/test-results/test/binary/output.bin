@@ -1,0 +1,11 @@
+¸14:57:26.139 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection
+¸14:57:26.148 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn1: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection
+„14:57:26.150 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV0Test -- findMember = Member(memberId=memberV0, money=10000)
+k14:57:26.152 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV0Test -- member == findMember false
+n14:57:26.152 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV0Test -- member equals findMember true
+¸14:57:26.171 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn2: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection
+[14:57:26.172 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV0 -- resultSize = 1
+¸14:57:26.173 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn3: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection
+¸14:57:26.176 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn4: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection
+[14:57:26.176 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV0 -- resultSize = 1
+¸14:57:26.177 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil -- get connection=conn5: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class=class org.h2.jdbc.JdbcConnection

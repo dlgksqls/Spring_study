@@ -1,0 +1,15 @@
+2024-09-06 14:16:41.776300+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+insert into member(member_id, money) values (?, ?) [42104-224]
+2024-09-06 14:17:01.349492+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+insert into member(member_id, money) values (?, ?) [42104-224]
+2024-09-06 14:18:48.286446+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+insert into member(member_id, money) values (?, ?) [42104-224]
+2024-09-06 14:21:40.600016+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+insert into member(member_id, money) values (?, ?) [42104-224]
+2024-09-06 14:25:13.173837+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+insert into member(member_id, money) values (?, ?) [42104-224]
