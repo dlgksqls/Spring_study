@@ -1,48 +1,42 @@
-D11:20:53.323 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:27:18.588 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.356 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:27:18.637 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.361 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:27:18.643 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.364 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:27:18.645 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn1: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.378 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:27:42.645 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.380 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
-‚                get connection = conn2: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.383 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:28:28.325 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.385 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:28:28.333 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn3: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.386 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+I15:28:28.336 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
+                resultSize = 1
+D15:29:59.773 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.387 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:30:02.375 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn4: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-I11:20:53.388 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
-                resultSize = 1
-D11:20:53.394 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:30:14.751 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.396 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:30:14.756 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn5: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.397 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:31:13.242 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.400 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:31:13.249 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
 ‚                get connection = conn6: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-D11:20:53.403 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
-d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.408 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
-‚                get connection = conn7: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-I11:20:53.408 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:31:13.251 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
                 resultSize = 1
-D11:20:53.408 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:31:13.252 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.410 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
-‚                get connection = conn8: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-I11:20:53.411 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:31:13.258 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
+‚                get connection = conn7: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
+I15:31:13.259 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
                 resultSize = 0
-D11:20:53.411 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
+D15:31:13.261 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
 d                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-I11:20:53.413 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
-‚                get connection = conn9: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-I11:20:53.413 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV1 --
+I15:31:13.265 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
+‚                get connection = conn8: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
+I15:31:13.267 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV2 --
                 resultSize = 1
