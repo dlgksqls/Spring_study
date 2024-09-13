@@ -1,114 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - MemberServiceV3_3Test</title>
-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<script src="../js/report.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="content">
-<h1>MemberServiceV3_3Test</h1>
-<div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; 
-<a href="../packages/hello.jdbc.service.html">hello.jdbc.service</a> &gt; MemberServiceV3_3Test</div>
-<div id="summary">
-<table>
-<tr>
-<td>
-<div class="summaryGroup">
-<table>
-<tr>
-<td>
-<div class="infoBox" id="tests">
-<div class="counter">1</div>
-<p>tests</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="failures">
-<div class="counter">0</div>
-<p>failures</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="ignored">
-<div class="counter">0</div>
-<p>ignored</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="duration">
-<div class="counter">0.554s</div>
-<p>duration</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
-<p>successful</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="tabs">
-<ul class="tabLinks">
-<li>
-<a href="#tab0">Tests</a>
-</li>
-<li>
-<a href="#tab1">Standard output</a>
-</li>
-</ul>
-<div id="tab0" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="success">AopCheck()</td>
-<td class="success">0.554s</td>
-<td class="success">passed</td>
-</tr>
-</table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>19:56:57.989 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
-                Neither @ContextConfiguration nor @ContextHierarchy found for test class [MemberServiceV3_3Test]: using SpringBootContextLoader
-19:56:57.992 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader --
-                Could not detect default resource locations for test class [hello.jdbc.service.MemberServiceV3_3Test]: no resource found for suffixes {-context.xml, Context.groovy}.
-19:56:58.005 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
-                Using ContextCustomizerFactory implementations for test class [MemberServiceV3_3Test]: [OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
-19:56:58.014 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
-                Using ContextCustomizers for test class [MemberServiceV3_3Test]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-19:56:58.066 [Test worker] DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider --
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.jdbc.service.MemberServiceV4Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-09-13T07:06:36" hostname="ihanbin-ui-noteubug.local" time="0.481">
+  <properties/>
+  <testcase name="AopCheck()" classname="hello.jdbc.service.MemberServiceV4Test" time="0.454"/>
+  <testcase name="이체중 예외 발생" classname="hello.jdbc.service.MemberServiceV4Test" time="0.016"/>
+  <testcase name="정상 이체" classname="hello.jdbc.service.MemberServiceV4Test" time="0.008"/>
+  <system-out><![CDATA[16:06:35.844 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
+                Neither @ContextConfiguration nor @ContextHierarchy found for test class [MemberServiceV4Test]: using SpringBootContextLoader
+16:06:35.846 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader --
+                Could not detect default resource locations for test class [hello.jdbc.service.MemberServiceV4Test]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:06:35.852 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
+                Using ContextCustomizerFactory implementations for test class [MemberServiceV4Test]: [OverrideAutoConfigurationContextCustomizerFactory, ObservabilityContextCustomizerFactory, TypeExcludeFiltersContextCustomizerFactory, PropertyMappingContextCustomizerFactory, WebDriverContextCustomizerFactory, ImportsContextCustomizerFactory, ExcludeFilterContextCustomizerFactory, HttpGraphQlTesterContextCustomizerFactory, DuplicateJsonObjectContextCustomizerFactory, MockitoContextCustomizerFactory, TestRestTemplateContextCustomizerFactory, WebTestClientContextCustomizerFactory, DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory, MockServerContainerContextCustomizerFactory, DynamicPropertiesContextCustomizerFactory]
+16:06:35.860 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
+                Using ContextCustomizers for test class [MemberServiceV4Test]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, WebDriverContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+16:06:35.902 [Test worker] DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider --
                 Identified candidate component class: file [/Users/leehb/Desktop/Spring_study/jdbc/build/classes/java/main/hello/jdbc/JdbcApplication.class]
-19:56:58.066 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper --
-                Found @SpringBootConfiguration hello.jdbc.JdbcApplication for test class hello.jdbc.service.MemberServiceV3_3Test
-19:56:58.117 [Test worker] DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils --
+16:06:35.903 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper --
+                Found @SpringBootConfiguration hello.jdbc.JdbcApplication for test class hello.jdbc.service.MemberServiceV4Test
+16:06:35.932 [Test worker] DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils --
                 Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: jakarta/servlet/ServletContext
-19:56:58.119 [Test worker] DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils --
+16:06:35.934 [Test worker] DEBUG o.s.t.c.u.TestContextSpringFactoriesUtils --
                 Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
-19:56:58.124 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
-                Using TestExecutionListeners for test class [MemberServiceV3_3Test]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-19:56:58.125 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
-                Before test class: class [MemberServiceV3_3Test], class annotated with @DirtiesContext [false] with mode [null]
-19:56:58.131 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener --
-                Performing dependency injection for test class hello.jdbc.service.MemberServiceV3_3Test
+16:06:35.937 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper --
+                Using TestExecutionListeners for test class [MemberServiceV4Test]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+16:06:35.937 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
+                Before test class: class [MemberServiceV4Test], class annotated with @DirtiesContext [false] with mode [null]
+16:06:35.942 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener --
+                Performing dependency injection for test class hello.jdbc.service.MemberServiceV4Test
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -119,253 +36,275 @@
 
  :: Spring Boot ::                (v3.3.3)
 
-19:56:58.280 [Test worker] INFO  h.jdbc.service.MemberServiceV3_3Test --
-                Starting MemberServiceV3_3Test using Java 17.0.10 with PID 95753 (started by leehb in /Users/leehb/Desktop/Spring_study/jdbc)
-19:56:58.280 [Test worker] DEBUG h.jdbc.service.MemberServiceV3_3Test --
+16:06:36.028 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                Starting MemberServiceV4Test using Java 17.0.10 with PID 74284 (started by leehb in /Users/leehb/Desktop/Spring_study/jdbc)
+16:06:36.028 [Test worker] DEBUG h.jdbc.service.MemberServiceV4Test --
                 Running with Spring Boot v3.3.3, Spring v6.1.12
-19:56:58.281 [Test worker] INFO  h.jdbc.service.MemberServiceV3_3Test --
-                No active profile set, falling back to 1 default profile: &quot;default&quot;
-19:56:58.281 [Test worker] DEBUG o.s.boot.SpringApplication --
-                Loading source class hello.jdbc.JdbcApplication,class hello.jdbc.service.MemberServiceV3_3Test$TestConfig
-19:56:58.292 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
-                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@151335cb
-19:56:58.301 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.029 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                No active profile set, falling back to 1 default profile: "default"
+16:06:36.029 [Test worker] DEBUG o.s.boot.SpringApplication --
+                Loading source class hello.jdbc.JdbcApplication,class hello.jdbc.service.MemberServiceV4Test$TestConfig
+16:06:36.035 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@226b143b
+16:06:36.040 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-19:56:58.309 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.045 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
-19:56:58.568 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.210 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
-19:56:58.572 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.212 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
-19:56:58.575 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.214 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
-19:56:58.591 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.223 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-19:56:58.591 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.223 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
-19:56:58.592 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.223 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-19:56:58.592 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.223 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-19:56:58.594 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.224 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-19:56:58.595 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.225 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-19:56:58.597 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.226 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
-19:56:58.598 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.227 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'jdbcConnectionDetailsHikariBeanPostProcessor'
+16:06:36.228 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
-19:56:58.598 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.228 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
-19:56:58.599 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.229 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
-19:56:58.601 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.230 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
-19:56:58.605 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.232 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-19:56:58.611 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.235 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'jdbcApplication'
-19:56:58.613 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.236 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-19:56:58.613 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.236 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-19:56:58.617 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.237 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'transactionAttributeSource'
-19:56:58.617 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.238 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'transactionInterceptor'
-19:56:58.618 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.238 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
-19:56:58.620 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.240 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
-19:56:58.620 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.240 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
-19:56:58.622 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'memberServiceV3_3Test.TestConfig'
-19:56:58.624 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
-19:56:58.624 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.241 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'memberServiceV4Test.TestConfig'
+16:06:36.241 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'dataSource'
-19:56:58.628 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'transactionManager'
-19:56:58.631 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'memberRepositoryV3'
-19:56:58.632 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'memberServiceV3_3'
-19:56:58.646 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
-19:56:58.647 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
-19:56:58.648 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
-19:56:58.648 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
-19:56:58.648 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'applicationAvailability'
-19:56:58.649 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
-19:56:58.650 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
-19:56:58.651 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
-19:56:58.651 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
-19:56:58.652 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
-19:56:58.652 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
-19:56:58.655 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.241 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+16:06:36.241 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
-19:56:58.667 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.242 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+16:06:36.249 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'jdbcConnectionDetails'
+16:06:36.249 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+16:06:36.249 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'jdbcConnectionDetails' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+16:06:36.250 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+16:06:36.250 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'dataSource' via factory method to bean named 'jdbcConnectionDetails'
+16:06:36.251 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@67424e82
+16:06:36.259 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'memberServiceV4Test.TestConfig' via constructor to bean named 'dataSource'
+16:06:36.260 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+16:06:36.260 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'memberRepositoryV4'
+16:06:36.263 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'memberServiceV4'
+16:06:36.271 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+16:06:36.272 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+16:06:36.272 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+16:06:36.272 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+16:06:36.272 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'applicationAvailability'
+16:06:36.273 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+16:06:36.273 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+16:06:36.273 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+16:06:36.273 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+16:06:36.274 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+16:06:36.275 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration'
-19:56:58.667 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.276 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
-19:56:58.669 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.276 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'transactionExecutionListeners'
-19:56:58.670 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.277 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
-19:56:58.673 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.279 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
-19:56:58.673 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.279 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
-19:56:58.673 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.279 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'lifecycleProcessor'
-19:56:58.673 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.279 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
-19:56:58.674 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.280 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
-19:56:58.676 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.280 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
-19:56:58.676 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.281 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
-19:56:58.677 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.281 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
-19:56:58.678 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.282 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
-19:56:58.678 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.282 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration'
-19:56:58.679 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.282 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'dataSourceScriptDatabaseInitializer'
-19:56:58.679 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.282 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration'
-19:56:58.679 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.283 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
-19:56:58.681 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.284 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'dataSourceScriptDatabaseInitializer' via factory method to bean named 'dataSource'
-19:56:58.681 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.284 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'dataSourceScriptDatabaseInitializer' via factory method to bean named 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
-19:56:58.683 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.285 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'jdbcTemplate'
-19:56:58.684 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.286 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
-19:56:58.684 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.286 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource'
-19:56:58.684 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.286 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
-19:56:58.695 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.290 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration'
-19:56:58.695 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.290 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
-19:56:58.696 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.290 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
-19:56:58.699 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.292 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
-19:56:58.699 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.292 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration'
-19:56:58.699 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.293 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'jdbcClient'
-19:56:58.699 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.293 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'jdbcClient' via factory method to bean named 'namedParameterJdbcTemplate'
-19:56:58.700 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.293 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
-19:56:58.700 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.293 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
-19:56:58.701 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.294 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
-19:56:58.702 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.294 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
-19:56:58.702 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.294 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'fileWatcher'
-19:56:58.703 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.295 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'sslPropertiesSslBundleRegistrar'
-19:56:58.703 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.295 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'fileWatcher'
-19:56:58.704 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.295 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'sslBundleRegistry'
-19:56:58.707 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.297 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration'
-19:56:58.708 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.297 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'threadPoolTaskExecutorBuilder'
-19:56:58.708 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.297 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
-19:56:58.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.298 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'threadPoolTaskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
-19:56:58.711 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.298 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration'
-19:56:58.711 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.298 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'taskExecutorBuilder'
-19:56:58.711 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.299 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
-19:56:58.712 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.299 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
-19:56:58.712 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.299 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration' via constructor to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
-19:56:58.713 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.299 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'simpleAsyncTaskExecutorBuilder'
-19:56:58.713 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.300 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration'
-19:56:58.714 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.300 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
-19:56:58.714 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.300 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration'
-19:56:58.714 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.300 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'threadPoolTaskSchedulerBuilder'
-19:56:58.714 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.300 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
-19:56:58.715 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.301 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'threadPoolTaskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
-19:56:58.716 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.301 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration'
-19:56:58.717 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.302 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'taskSchedulerBuilder'
-19:56:58.717 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.302 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
-19:56:58.717 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.302 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
-19:56:58.718 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.302 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration' via constructor to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
-19:56:58.718 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.302 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'simpleAsyncTaskSchedulerBuilder'
-19:56:58.719 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.303 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
-19:56:58.719 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.303 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration'
-19:56:58.720 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.303 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'transactionManager'
+16:06:36.304 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'transactionManager' via factory method to bean named 'environment'
+16:06:36.304 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Autowiring by type from bean name 'transactionManager' via factory method to bean named 'dataSource'
+16:06:36.306 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
-19:56:58.720 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.307 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
-19:56:58.720 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.307 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
-19:56:58.720 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.307 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
-19:56:58.720 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.307 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'transactionTemplate'
-19:56:58.721 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.307 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'transactionManager'
-19:56:58.722 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.308 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
-19:56:58.725 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.310 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'applicationTaskExecutor'
-19:56:58.726 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+16:06:36.311 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
-19:56:58.731 [Test worker] DEBUG o.s.s.c.ThreadPoolTaskExecutor --
+16:06:36.314 [Test worker] DEBUG o.s.s.c.ThreadPoolTaskExecutor --
                 Initializing ExecutorService 'applicationTaskExecutor'
-19:56:58.735 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
+16:06:36.316 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
                 Starting beans in phase -2147483647
-19:56:58.735 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
+16:06:36.317 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
                 Successfully started bean 'springBootLoggingLifecycle'
-19:56:58.735 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
+16:06:36.317 [Test worker] DEBUG o.s.c.s.DefaultLifecycleProcessor --
                 Starting beans in phase 2147483647
-19:56:58.744 [Test worker] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger --
+16:06:36.322 [Test worker] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger --
                 
 
 
@@ -391,9 +330,17 @@ Positive matches:
       - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
       - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration#jdbcConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.jdbc.JdbcConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
    DataSourceConfiguration.Hikari matched:
       - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
       - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    DataSourceInitializationConfiguration matched:
       - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
@@ -407,6 +354,9 @@ Positive matches:
 
    DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
       - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    GenericCacheConfiguration matched:
       - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
@@ -596,13 +546,7 @@ Negative matches:
 
    DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
       Did not match:
-         - EmbeddedDataSource found supported pooled data source (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
-
-   DataSourceAutoConfiguration.PooledDataSourceConfiguration:
-      Did not match:
-         - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) found beans of type 'javax.sql.DataSource' dataSource (OnBeanCondition)
-      Matched:
-         - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
 
    DataSourceCheckpointRestoreConfiguration:
       Did not match:
@@ -639,10 +583,6 @@ Negative matches:
    DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
-
-   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
-      Did not match:
-         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
 
    DispatcherServletAutoConfiguration:
       Did not match:
@@ -1209,83 +1149,338 @@ Unconditional classes:
 
 
 
-19:56:58.761 [Test worker] INFO  h.jdbc.service.MemberServiceV3_3Test --
-                Started MemberServiceV3_3Test in 0.604 seconds (process running for 1.327)
-19:56:58.763 [Test worker] DEBUG o.s.b.a.ApplicationAvailabilityBean --
+16:06:36.331 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                Started MemberServiceV4Test in 0.374 seconds (process running for 0.839)
+16:06:36.332 [Test worker] DEBUG o.s.b.a.ApplicationAvailabilityBean --
                 Application availability state LivenessState changed to CORRECT
-19:56:58.765 [Test worker] DEBUG o.s.b.a.ApplicationAvailabilityBean --
+16:06:36.334 [Test worker] DEBUG o.s.b.a.ApplicationAvailabilityBean --
                 Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-19:56:58.766 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
-19:56:58.768 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
-19:56:58.771 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
-                Before test method: class [MemberServiceV3_3Test], method [AopCheck], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
-19:56:58.772 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
-19:56:58.773 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
-19:56:59.253 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
-19:56:59.255 [Test worker] INFO  h.jdbc.service.MemberServiceV3_3Test --
-                memberService class = class hello.jdbc.service.MemberServiceV3_3$$SpringCGLIB$$0
-19:56:59.255 [Test worker] INFO  h.jdbc.service.MemberServiceV3_3Test --
-                memberRepository class = class hello.jdbc.repository.MemberRepositoryV3
-19:56:59.256 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
-19:56:59.258 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+16:06:36.334 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
+16:06:36.336 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
+16:06:36.337 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
+                Before test method: class [MemberServiceV4Test], method [AopCheck], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.343 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
+16:06:36.343 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
+16:06:36.709 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
+16:06:36.710 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                memberService class = class hello.jdbc.service.MemberServiceV4$$SpringCGLIB$$0
+16:06:36.710 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                memberRepository class = class hello.jdbc.repository.MemberRepositoryV5
+16:06:36.731 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
+16:06:36.732 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.732 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.733 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
                 Fetching JDBC Connection from DataSource
-19:56:59.259 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
-                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-19:56:59.307 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                get connection = conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-19:56:59.309 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                resultSize = 0
-19:56:59.313 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+16:06:36.733 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                HikariPool-1 - configuration:
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                allowPoolSuspension.............false
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                autoCommit......................true
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                catalog.........................none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                connectionInitSql...............none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                connectionTestQuery.............none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                connectionTimeout...............30000
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                dataSource......................none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                dataSourceClassName.............none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                dataSourceJNDI..................none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                dataSourceProperties............{password=<masked>}
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                driverClassName................."org.h2.Driver"
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                exceptionOverrideClassName......none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                healthCheckProperties...........{}
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                healthCheckRegistry.............none
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                idleTimeout.....................600000
+16:06:36.735 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                initializationFailTimeout.......1
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                isolateInternalQueries..........false
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                jdbcUrl.........................jdbc:h2:tcp://localhost/~/jdbc_test
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                keepaliveTime...................0
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                leakDetectionThreshold..........0
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                maxLifetime.....................1800000
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                maximumPoolSize.................10
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                metricRegistry..................none
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                metricsTrackerFactory...........none
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                minimumIdle.....................10
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                password........................<masked>
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                poolName........................"HikariPool-1"
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                readOnly........................false
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                registerMbeans..................false
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                scheduledExecutor...............none
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                schema..........................none
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                threadFactory...................internal
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                transactionIsolation............default
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                username........................"sa"
+16:06:36.736 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig --
+                validationTimeout...............5000
+16:06:36.736 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource --
+                HikariPool-1 - Starting...
+16:06:36.780 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool --
+                HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA
+16:06:36.780 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource --
+                HikariPool-1 - Start completed.
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
                 Fetching JDBC Connection from DataSource
-19:56:59.313 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
-                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-19:56:59.315 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                get connection = conn1: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-19:56:59.316 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                resultSize = 0
-19:56:59.316 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.787 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
                 Fetching JDBC Connection from DataSource
-19:56:59.316 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource --
-                Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc_test]
-19:56:59.317 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                get connection = conn2: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA, class = class org.h2.jdbc.JdbcConnection
-19:56:59.318 [Test worker] INFO  h.jdbc.repository.MemberRepositoryV3 --
-                resultSize = 0
-19:56:59.318 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
-19:56:59.319 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
-19:56:59.319 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
-19:56:59.319 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
-19:56:59.320 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
-19:56:59.320 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
-                After test method: class [MemberServiceV3_3Test], method [AopCheck], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
-19:56:59.324 [Test worker] DEBUG o.springframework.test.context.cache --
-                Spring test ApplicationContext cache statistics: [DefaultContextCache@2a39aa2b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
-19:56:59.324 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
-                After test class: class [MemberServiceV3_3Test], class annotated with @DirtiesContext [false] with mode [null]
-</pre>
-</span>
-</div>
-</div>
-<div id="footer">
-<p>
-<div>
-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
-</label>
-</div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10</a> at 2024. 9. 10. 오후 7:56:59</p>
-</div>
-</div>
-</body>
-</html>
+16:06:36.788 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
+16:06:36.788 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
+16:06:36.788 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
+16:06:36.788 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
+16:06:36.789 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
+16:06:36.789 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
+                After test method: class [MemberServiceV4Test], method [AopCheck], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.791 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener --
+                Performing dependency injection for test class hello.jdbc.service.MemberServiceV4Test
+16:06:36.792 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
+16:06:36.792 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1, failureCount = 0]
+16:06:36.792 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
+                Before test method: class [MemberServiceV4Test], method [accountTransferEx], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.793 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1, failureCount = 0]
+16:06:36.793 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1, failureCount = 0]
+16:06:36.793 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1, failureCount = 0]
+16:06:36.793 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.793 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [insert into member(member_id, money) values (?, ?)]
+16:06:36.793 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.796 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.796 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [insert into member(member_id, money) values (?, ?)]
+16:06:36.796 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.798 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Creating new transaction with name [hello.jdbc.service.MemberServiceV4.accountTransfer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:06:36.798 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Acquired Connection [HikariProxyConnection@1401633928 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] for JDBC transaction
+16:06:36.799 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Switching JDBC Connection [HikariProxyConnection@1401633928 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] to manual commit
+16:06:36.799 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.800 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.803 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.803 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.803 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.803 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [update member set money = ? where member_id = ?]
+16:06:36.804 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Initiating transaction rollback
+16:06:36.804 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Rolling back JDBC transaction on Connection [HikariProxyConnection@1401633928 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA]
+16:06:36.804 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Releasing JDBC Connection [HikariProxyConnection@1401633928 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] after transaction
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.805 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.807 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1, failureCount = 0]
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.807 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.808 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.808 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.808 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.808 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1, failureCount = 0]
+16:06:36.808 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1, failureCount = 0]
+16:06:36.809 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1, failureCount = 0]
+16:06:36.809 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1, failureCount = 0]
+16:06:36.809 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1, failureCount = 0]
+16:06:36.809 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
+                After test method: class [MemberServiceV4Test], method [accountTransferEx], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.809 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener --
+                Performing dependency injection for test class hello.jdbc.service.MemberServiceV4Test
+16:06:36.809 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1, failureCount = 0]
+16:06:36.809 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1, failureCount = 0]
+16:06:36.810 [Test worker] DEBUG o.s.t.c.s.DirtiesContextBeforeModesTestExecutionListener --
+                Before test method: class [MemberServiceV4Test], method [accountTransfer], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.810 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1, failureCount = 0]
+16:06:36.810 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1, failureCount = 0]
+16:06:36.810 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1, failureCount = 0]
+16:06:36.811 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.811 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [insert into member(member_id, money) values (?, ?)]
+16:06:36.811 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.812 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.812 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [insert into member(member_id, money) values (?, ?)]
+16:06:36.812 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.812 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                start tr
+16:06:36.812 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Creating new transaction with name [hello.jdbc.service.MemberServiceV4.accountTransfer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:06:36.812 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Acquired Connection [HikariProxyConnection@98550436 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] for JDBC transaction
+16:06:36.812 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Switching JDBC Connection [HikariProxyConnection@98550436 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] to manual commit
+16:06:36.812 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.812 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.813 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.813 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.813 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.813 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [update member set money = ? where member_id = ?]
+16:06:36.814 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.814 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [update member set money = ? where member_id = ?]
+16:06:36.814 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Initiating transaction commit
+16:06:36.814 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Committing JDBC transaction on Connection [HikariProxyConnection@98550436 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA]
+16:06:36.815 [Test worker] DEBUG o.s.j.support.JdbcTransactionManager --
+                Releasing JDBC Connection [HikariProxyConnection@98550436 wrapping conn0: url=jdbc:h2:tcp://localhost/~/jdbc_test user=SA] after transaction
+16:06:36.815 [Test worker] INFO  h.jdbc.service.MemberServiceV4Test --
+                end tr
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL query
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [select * from member where member_id = ?]
+16:06:36.815 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.816 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1, failureCount = 0]
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.816 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.817 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL update
+16:06:36.817 [Test worker] DEBUG o.s.jdbc.core.JdbcTemplate --
+                Executing prepared SQL statement [delete from member where member_id = ?]
+16:06:36.817 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils --
+                Fetching JDBC Connection from DataSource
+16:06:36.817 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1, failureCount = 0]
+16:06:36.817 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1, failureCount = 0]
+16:06:36.817 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1, failureCount = 0]
+16:06:36.818 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1, failureCount = 0]
+16:06:36.818 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1, failureCount = 0]
+16:06:36.818 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
+                After test method: class [MemberServiceV4Test], method [accountTransfer], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+16:06:36.819 [Test worker] DEBUG o.springframework.test.context.cache --
+                Spring test ApplicationContext cache statistics: [DefaultContextCache@550de6b8 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1, failureCount = 0]
+16:06:36.819 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener --
+                After test class: class [MemberServiceV4Test], class annotated with @DirtiesContext [false] with mode [null]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
