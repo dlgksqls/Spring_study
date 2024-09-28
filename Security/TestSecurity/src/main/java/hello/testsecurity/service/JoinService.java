@@ -25,7 +25,7 @@ public class JoinService {
 
             // 비밀번호 해쉬화
             user.setPassword(bCryptPasswordEncoder.encode(joinDto.getPassword()));
-            user.setRole("ROLE_USER");
+            user.setRole("ROLE_ADMIN");
 
             userRepository.save(user);
             System.out.println("로그인 성공");

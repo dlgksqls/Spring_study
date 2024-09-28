@@ -8,5 +8,14 @@
 </head>
 <body>
 main page
+<hr>
+<p>id : {{id}}</p><br>
+<p>role : {{role}}</p>
+
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">로그아웃</button>
+</form>
+
 </body>
 </html>
