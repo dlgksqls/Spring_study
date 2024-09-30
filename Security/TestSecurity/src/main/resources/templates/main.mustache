@@ -12,9 +12,11 @@ main page
 <p>id : {{id}}</p><br>
 <p>role : {{role}}</p>
 
+<a href="login">login</a><br>
+
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-    <button type="submit">로그아웃</button>
+    <button type="submit">logout</button>
 </form>
 
 </body>
