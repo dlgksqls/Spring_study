@@ -41,11 +41,11 @@ public class SecurityConfig {
                 .loginProcessingUrl("/loginProc")
                 .permitAll());
 
-//        //다중 로그인 설정 (적용 안됨,,, 고민 좀 해보자,,,)
-//        http.sessionManagement((auth) -> auth
-//                .maximumSessions(1) // 하나의 아이디에 대한 다중 로그인 허용 갯수
-//                .maxSessionsPreventsLogin(true) // 다중 로그인 갯수를 초과했을 때 처리 방법 true : 로그인 차단, false : 기존 세션 하나 삭제
-//                .sessionRegistry(sessionRegistry()));
+        //다중 로그인 설정 (적용 안됨,,, 고민 좀 해보자,,,)
+        http.sessionManagement((auth) -> auth
+                .maximumSessions(1) // 하나의 아이디에 대한 다중 로그인 허용 갯수
+                .maxSessionsPreventsLogin(true) // 다중 로그인 갯수를 초과했을 때 처리 방법 true : 로그인 차단, false : 기존 세션 하나 삭제
+                .sessionRegistry(sessionRegistry()));
 
         // 세션 고정 보호
         http.sessionManagement((auth) -> auth
