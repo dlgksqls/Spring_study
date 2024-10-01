@@ -9,6 +9,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
 
+/**
+ * 로그인 시 사용
+ * DTO 같은 느낌?
+ */
 public class CustomUserDetails implements UserDetails {
 
     private final UserEntity userEntity;
