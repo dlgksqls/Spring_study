@@ -32,7 +32,7 @@ public class LogTraceAspect {
         TraceStatus status = null;
 
         try {
-            String message = joinPoint.getSignature().toLongString();
+            String message = joinPoint.getSignature().toShortString();
             status = logTrace.begin(message);
 
             // 로직 호출

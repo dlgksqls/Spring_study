@@ -1,5 +1,6 @@
 package hello.proxy;
 
+import hello.proxy.config.AopConfig;
 import hello.proxy.config.AppV1Config;
 import hello.proxy.config.AppV2Config;
 import hello.proxy.config.v1_proxy.ConcreteProxyConfig;
@@ -26,7 +27,8 @@ import org.springframework.context.annotation.Import;
 //@Import(ProxyFactoryConfigV1.class)
 //@Import(ProxyFactoryConfigV2.class)
 //@Import(BeanPostProcessorConfig.class)
-@Import(AutoProxyConfig.class)
+//@Import(AutoProxyConfig.class)
+@Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.proxy.app") //주의 (app 패키지 하위만 컴포넌트 스캔을 함), 그래서 위에 import를 함
 public class ProxyApplication {
 
