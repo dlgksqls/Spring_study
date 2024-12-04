@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Aspect;
 import java.lang.reflect.Method;
 
 @Slf4j
-@Aspect
+@Aspect // == advisor로 변환해줌 스프링이
 public class LogTraceAspect {
 
     private final LogTrace logTrace;
