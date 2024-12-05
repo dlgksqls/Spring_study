@@ -45,7 +45,7 @@ public class AspectV6Advice {
         log.info("[ex] {} message = {}", joinPoint.getSignature(), ex.getMessage());
     }
 
-    // finally 로직
+    // after = finally 라고 생각하면 됨
     @After(value = "hello.aop.order.aop.Pointcuts.orderAndService()")
     public void doAfter(JoinPoint joinPoint){
         log.info("[after] {}", joinPoint.getSignature());
