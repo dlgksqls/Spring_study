@@ -19,9 +19,26 @@ public class ProxyCastingTest {
         // 프록시를 인터페이스로 캐스팅 성공
         MemberService memberServiceProxy = (MemberService) proxyFactory.getProxy();
 
+        log.info("proxy class={}", memberServiceProxy.getClass());
+
         // JDK 동적 프록시로 구현 클래스로 캐스팅 시도 실패, ClassCastException 예외 발생
         Assertions.assertThrows(ClassCastException.class, () -> {
             MemberServiceImpl castingMemberService  = (MemberServiceImpl) memberServiceProxy;
         });
+    }
+
+    @Test
+    void cglibProxy(){
+        MemberServiceImpl target = new MemberServiceImpl();
+        ProxyFactory proxyFactory = new ProxyFactory(target);
+        proxyFactory.setProxyTargetClass(true); // CGLIB 동적 프록시
+
+        // 프록시를 인터페이스로 캐스팅 성공
+        MemberService memberServiceProxy = (MemberService) proxyFactory.getProxy();
+
+        log.info("proxy class={}", memberServiceProxy.getClass());
+
+        // JDK 동적 프록시로 구현 클래스로 캐스팅 시도 성공, ClassCastException 예외 발생
+        MemberServiceImpl castingMemberService  = (MemberServiceImpl) memberServiceProxy;
     }
 }
