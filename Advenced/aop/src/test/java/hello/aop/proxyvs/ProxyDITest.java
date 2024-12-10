@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Import;
 
 @Slf4j
 //@SpringBootTest(properties = {"spring.aop.proxy-target-class=false"}) // JDK 동적 프록시, impl(구현체)에 의존관계주입 시 예외 발생
-@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 잘 됨
+//@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 잘 됨
+@SpringBootTest
 @Import(ProxyDIAspect.class)
 public class ProxyDITest {
 
