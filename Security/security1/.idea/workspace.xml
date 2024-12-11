@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab52cb4a-1022-4b34-998d-0f31dbc226f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Advenced/aop/src/test/java/hello/aop/proxyvs/ProxyDITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Advenced/aop/src/test/java/hello/aop/proxyvs/ProxyDITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733832742394</updated>
       <workItem from="1733832743521" duration="22000" />
-      <workItem from="1733832808276" duration="3428000" />
+      <workItem from="1733832808276" duration="4465000" />
     </task>
     <servers />
   </component>
