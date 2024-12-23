@@ -1,6 +1,7 @@
-spring:
-  security:
-    user:
-      name: user
-      password: 1111
-      roles: USER
+#자바 설정파일에서 유저 추가
+#spring:
+#  security:
+#    user:
+#      name: user
+#      password: 1111
+#      roles: USER
