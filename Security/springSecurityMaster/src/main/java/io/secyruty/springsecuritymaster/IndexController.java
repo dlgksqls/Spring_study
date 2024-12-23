@@ -10,4 +10,14 @@ public class IndexController {
     public String index(){
         return "index";
     }
+
+    @GetMapping("/home")
+    public String homePage(){
+        return "home";
+    }
+
+    @GetMapping("/loginPage")
+    public String loginPace(){
+        return "loginPage";
+    }
 }
