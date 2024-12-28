@@ -94,7 +94,7 @@ public class FormItemController {
     }
 
     @GetMapping("/{itemId}/edit")
-    public String editForm(@PathVariable Long itemId, Model model) {
+    public String editForm(@PathVariable Long itemId, Model model){
         Item item = itemRepository.findById(itemId);
 
         Map<String, String> regions = new LinkedHashMap<>();
