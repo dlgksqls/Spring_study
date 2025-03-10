@@ -1,11 +1,18 @@
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/PostServiceImplTest.java
 package com.example.demo.medium;
+========
+package com.example.demo.post.service;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/post/service/PostServiceTest.java
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 import com.example.demo.post.domain.Post;
 import com.example.demo.post.domain.PostCreate;
 import com.example.demo.post.domain.PostUpdate;
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/PostServiceImplTest.java
 import com.example.demo.post.service.PostServiceImpl;
+========
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/post/service/PostServiceTest.java
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,7 +36,11 @@ public class PostServiceImplTest {
     void getById는_존재하는_게시물을_내려준다() {
         // given
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/PostServiceImplTest.java
         Post result = postServiceImpl.getById(1);
+========
+        Post result = postService.getById(1);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/post/service/PostServiceTest.java
 
         // then
         assertThat(result.getContent()).isEqualTo("helloworld");
@@ -45,7 +56,11 @@ public class PostServiceImplTest {
                 .build();
 
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/PostServiceImplTest.java
         Post result = postServiceImpl.create(postCreate);
+========
+        Post result = postService.create(postCreate);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/post/service/PostServiceTest.java
 
         // then
         assertThat(result.getId()).isNotNull();
@@ -61,10 +76,17 @@ public class PostServiceImplTest {
                 .build();
 
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/PostServiceImplTest.java
         postServiceImpl.update(1, postUpdate);
 
         // then
         Post post = postServiceImpl.getById(1);
+========
+        postService.update(1, postUpdate);
+
+        // then
+        Post post = postService.getById(1);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/post/service/PostServiceTest.java
         assertThat(post.getContent()).isEqualTo("hello world :)");
         assertThat(post.getModifiedAt()).isGreaterThan(0);
     }

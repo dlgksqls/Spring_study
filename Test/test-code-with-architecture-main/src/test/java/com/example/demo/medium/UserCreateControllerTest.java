@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserCreateControllerTest.java
 package com.example.demo.medium;
+========
+package com.example.demo.user.controller;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/controller/UserCreateControllerTest.java
 
 import com.example.demo.user.domain.UserCreate;
 import com.fasterxml.jackson.databind.ObjectMapper;

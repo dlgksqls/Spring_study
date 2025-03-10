@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/HealthCheckTest.java
 package com.example.demo.medium;
+========
+package com.example.demo.common.controller;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/common/controller/HealthCheckTest.java
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

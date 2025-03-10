@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserJpaRepositoryTest.java
 package com.example.demo.medium;
+========
+package com.example.demo.user.infrastructure;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/infrastructure/UserJpaRepositoryTest.java
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

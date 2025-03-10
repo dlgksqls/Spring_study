@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
 package com.example.demo.medium;
+========
+package com.example.demo.user.service;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
@@ -10,7 +14,12 @@ import com.example.demo.user.domain.User;
 import com.example.demo.user.domain.UserStatus;
 import com.example.demo.user.domain.UserCreate;
 import com.example.demo.user.domain.UserUpdate;
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
 import com.example.demo.user.service.UserServiceImpl;
+========
+import com.example.demo.user.infrastructure.UserEntity;
+import com.example.demo.user.service.UserService;
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
@@ -44,7 +53,11 @@ public class UserServiceImplTest {
         String email = "testemail393939@gmail.com";
 
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         User result = userServiceImpl.getByEmail(email);
+========
+        User result = userService.getByEmail(email);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
 
         // then
         assertThat(result.getNickname()).isEqualTo("test");
@@ -66,7 +79,11 @@ public class UserServiceImplTest {
     void getById는_ACTIVE_상태인_유저를_찾아올_수_있다() {
         // given
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         User result = userServiceImpl.getById(1);
+========
+        User result = userService.getById(1);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
 
         // then
         assertThat(result.getNickname()).isEqualTo("test");
@@ -78,7 +95,11 @@ public class UserServiceImplTest {
         // when
         // then
         assertThatThrownBy(() -> {
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
             User result = userServiceImpl.getById(2);
+========
+            User result = userService.getById(2);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
         }).isInstanceOf(ResourceNotFoundException.class);
     }
 
@@ -93,7 +114,11 @@ public class UserServiceImplTest {
         BDDMockito.doNothing().when(mailSender).send(any(SimpleMailMessage.class));
 
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         User result = userServiceImpl.create(userCreate);
+========
+        User result = userService.create(userCreate);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
 
         // then
         assertThat(result.getId()).isNotNull();
@@ -110,10 +135,17 @@ public class UserServiceImplTest {
                 .build();
 
         // when
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         userServiceImpl.update(1, userUpdate);
 
         // then
         User userEntity = userServiceImpl.getById(1);
+========
+        userService.update(1, userUpdate);
+
+        // then
+        User userEntity = userService.getById(1);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
         assertThat(userEntity.getId()).isNotNull();
         assertThat(userEntity.getAddress()).isEqualTo("Incheon");
         assertThat(userEntity.getNickname()).isEqualTo("kok202-n");
@@ -126,7 +158,11 @@ public class UserServiceImplTest {
         userServiceImpl.login(1);
 
         // then
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         User userEntity = userServiceImpl.getById(1);
+========
+        User userEntity = userService.getById(1);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
         assertThat(userEntity.getLastLoginAt()).isGreaterThan(0L);
         // assertThat(result.getLastLoginAt()).isEqualTo("T.T"); // FIXME
     }
@@ -138,7 +174,11 @@ public class UserServiceImplTest {
         userServiceImpl.verifyEmail(2, "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaab");
 
         // then
+<<<<<<<< HEAD:Test/test-code-with-architecture-main/src/test/java/com/example/demo/medium/UserServiceImplTest.java
         User userEntity = userServiceImpl.getById(2);
+========
+        User userEntity = userService.getById(2);
+>>>>>>>> origin/main:Test/test-code-with-architecture-main/src/test/java/com/example/demo/user/service/UserServiceTest.java
         assertThat(userEntity.getStatus()).isEqualTo(UserStatus.ACTIVE);
     }
 
